@@ -9,6 +9,7 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 import { Button } from '@material-ui/core';
+import Bookings from '../Bookings/Bookings';
 
 const Book = () => {
     const {bedType} = useParams();
@@ -78,10 +79,12 @@ const Book = () => {
         />
         
       </Grid>
-      <Button variant="contained" color="primary" onClick={()=>handleBooking()}>Book Now</Button>
+      <Button variant="contained" color="primary" onClick={handleBooking}>Book Now</Button>
     </MuiPickersUtilsProvider>
 
-        </div>
+    <Bookings></Bookings>
+
+      </div>
     );
 };
 
